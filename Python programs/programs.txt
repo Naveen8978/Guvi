@@ -1,0 +1,207 @@
+1) Write a program to perform input and output of all basic data types:
+
+a =int(input())
+b= float(input())
+c= input()
+print(a)
+print(b)
+print(c)
+
+#---------------------------------------------------------------------------------------------------
+
+
+2) Write a program to enter two numbers and find their sum.
+
+
+a =int(input())
+b= int(input())
+c=a+b
+print(c)
+
+#---------------------------------------------------------------------------------------------------
+
+3)Write a program to enter two numbers and to perform all arithmetic operations
+
+
+a =int(input())
+b= int(input())
+c=a+b
+d = a-b
+e=a/b
+f=a*b
+print(c)
+print(d)
+print(e)
+print(f)
+
+
+#---------------------------------------------------------------------------------------------------
+
+4)Write a program to enter an length and breadth of a rectangle and to print its perimeter
+
+
+a =int(input())
+b= int(input())
+c = 2*(a+b)
+print(c)
+
+#---------------------------------------------------------------------------------------------------
+
+
+5)Write a program to enter an length and breadth of a rectangle and to print its area
+
+
+a =int(input())
+b= int(input())
+c = a*b
+print(c)
+
+#---------------------------------------------------------------------------------------------------
+
+
+
+6) Program to enter the radius of the circle and find its diameter, circumference and area
+
+
+a =int(input())
+b= 2*a
+c= 3.14*(a*a)
+d=  2*(3.14*a)
+print(b)
+print(c)
+print(d)
+
+#---------------------------------------------------------------------------------------------------
+
+
+7) Program to enter length in centimeter and convert it to meter and kilometer
+
+
+centimeter = int(input())
+meter= centimeter*100
+kiloMeter = centimeter*1000
+print(meter)
+print(kiloMeter)
+
+#---------------------------------------------------------------------------------------------------
+
+8) Program to enter a temperature and convert it from celsius to fahrenheit
+
+celcius = float(input())
+f=(celcius*(1.8)) +32
+print(f)
+
+#---------------------------------------------------------------------------------------------------
+
+
+
+9) Program to enter fahrenheit and convert it into celsius
+
+
+f= float(input())
+c= (f-32)*(5/9)
+print(c)
+
+#---------------------------------------------------------------------------------------------------
+
+
+10) Program to convert days into years, weeks and days
+
+
+days = int(input("Enter number of days: "))
+year = int(days / 365) 
+week = int((days % 365) / 7) 
+days = (days % 365) % 7 
+print(year)
+print(week)
+print(days)
+
+
+#---------------------------------------------------------------------------------------------------
+
+
+11) Write a program to find the power of any number X^Y
+
+x= int(input())
+y=int(input())
+z=x**y
+print(z)
+
+#---------------------------------------------------------------------------------------------------
+
+
+12) Program to enter any number and to calculate its square root
+
+import math
+a= float(input())
+c= math.sqrt(a)
+print(c)
+
+#---------------------------------------------------------------------------------------------------
+
+13)Write a program to enter two angles of a triangle and find the third angle
+
+
+angle1 = int(input())
+angle2 = int(input())
+angle3 = 180 -(angle1+angle2)
+print(angle3)
+
+#---------------------------------------------------------------------------------------------------
+
+
+14) program to enter base and height of a triangle and find its area
+
+base, height = map(float,input("Enter base and height").split())
+def calArea(base, height):
+    area = (base*height)/2
+    return(area)
+ar=calArea(base,height)
+print(ar)
+
+#---------------------------------------------------------------------------------------------------
+
+
+15) program to calculate the area of equilateral triangle
+
+import math
+side = float(input("Enter the value of side:"))
+area = (1/4)*math.sqrt(3)*(side**2)
+print("%.2f"%area)
+
+#---------------------------------------------------------------------------------------------------
+
+
+16)  program to enter marks of 5 subjects and calculate their total, average and percentage
+
+m1,m2,m3,m4,m5 = map(float,input("Enter the marks of 5 subjects:").split())
+def cal(m1,m2,m3,m4,m5):
+    total= m1+m2+m3+m4+m5
+    average = (m1+m2+m3+m4+m5)/m5
+    percentage = (total/500)*100
+    print("total is", total)
+    print("Average is: ", average)
+    print("percentage is: ", percentage)
+cal(m1,m2,m3,m4,m5)
+
+#---------------------------------------------------------------------------------------------------
+
+
+17) Write a program to enter P T R and calculate SImple Interest
+
+p,t,r =map(float(),input("Enter principal time and rate of interest").split())
+def f_simpleInterest(p,t,r):
+    simpleInterest =(p*t*r)/100
+    return(simpleInterest)
+result = f_simpleInterest(p,t,r)
+print("Simple interest is: ", result)
+
+#---------------------------------------------------------------------------------------------------
+18) Write a program to enter P T R and calculate Compound Interest
+
+p,t,r =map(float(),input("Enter principal time and rate of interest").split())
+compoundInterest = p*(pow((1+r/100),t))
+print(compoundInterest)
+
+
+
